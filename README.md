@@ -42,7 +42,21 @@ minha_tabela
 ```
 #### Exercício 1 utilizando a biblioteca `sidrapy` obviamente em python
 
+linux
+```bash
+export PATH="${PATH}:$(python3 -m site --user-base)/bin"
+export PYTHONPATH="${PYTHONPATH}:$(python3 -m site --user-base)/lib/python3.8"
+pip3 install --user --upgrade sidrapy
+```
+
 ```python
+import sidrapy
+
+minha_tabela = sidrapy.get_table(table_code="202", territorial_level="102", ibge_territorial_code="3518800032", period="2010")
+minha_tabela.info()
+minha_tabela.V
+minha_tabela['V']
+minha_tabela
 
 ```
 
