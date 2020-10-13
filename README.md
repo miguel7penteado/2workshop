@@ -14,9 +14,9 @@
 
 ### Exercício 1
 
-[Acesso ao SIDRA http://sidra.ibge.gov.br](http://sidra.ibge.gov.br)
-[Descrever os metadados da API](http://api.sidra.ibge.gov.br/)
-[Consultar a API SIDRA](https://apisidra.ibge.gov.br/values/)
+* [Acesso ao SIDRA http://sidra.ibge.gov.br](http://sidra.ibge.gov.br)
+* [Descrever os metadados da API](http://api.sidra.ibge.gov.br/)
+* [Consultar a API SIDRA](https://apisidra.ibge.gov.br/values/)
 
 ```bash
 # Testar o XML
@@ -29,6 +29,8 @@ curl -H "Accept: application/json" -X GET https://apisidra.ibge.gov.br/values/t/
 curl -H "Accept: text/plain" -X GET https://apisidra.ibge.gov.br/values/t/202/n102/3518800032/p/2010
 ```
 
+#### Exercício 1 utilizando a biblioteca `sidrar` obviamente em R
+
 ```R
 install.packages("sidrar");
 library(sidrar);
@@ -38,8 +40,10 @@ names(minha_tabela);
 str(minha_tabela);
 minha_tabela
 ```
+#### Exercício 1 utilizando a biblioteca `sidrapy` obviamente em python
 
 ```python
+
 ```
 
 
